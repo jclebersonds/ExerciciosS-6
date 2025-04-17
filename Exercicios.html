@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="forca.css">
+</head>
+<body>
+    
+    <div id="login-container" class="container">
+        <h1>Bem-vindo ao Jogo da Forca!</h1>
+        <input id="nickname" type="text" placeholder="Digite seu nome ou nickname">
+        <button id="iniciar-jogo">Iniciar</button>
+    </div>
+
+    
+    <div id="jogo-container" class="container hidden">
+        <h1>Jogo da Forca</h1>
+        <h2 id="nome-jogador"></h2>
+
+       
+        <div id="palavra-oculta" class="palavra">_ _ _ _ _</div>
+
+        
+        <div class="info">
+            <div class="letras-erradas">
+                <h3>Letras Erradas:</h3>
+                <div id="letras-erradas"></div>
+            </div>
+            <div class="tentativas-restantes">
+                <h3>Tentativas Restantes:</h3>
+                <div id="tentativas">10</div>
+            </div>
+        </div>
+
+        
+        <div class="entrada-letra">
+            <input id="entrada-letra" type="text" maxlength="1" placeholder="Digite uma letra">
+            <button id="enviar">Enviar</button>
+        </div>
+
+        
+        <div id="modal-vitoria" class="modal hidden">
+            <div class="modal-content">
+                <h2>Parabéns! Você venceu!</h2>
+                <button id="jogar-novamente">Jogar Novamente</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
